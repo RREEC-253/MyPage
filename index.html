@@ -16,16 +16,20 @@
 </head>
 
 <body>
+    <div class="contenedor_menu_global">
+        <div class="menu">
+            <a href="index.html" class="logo"> 
+            <img src="src/logo-ucsp.svg" alt="Logo UCSP" class="logo-ucsp">
+        </a>
 
-    <nav>
-        <ul class="menu">
-            <!-- El símbolo # busca un ID dentro de la misma página -->
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#amigos">Amigos</a></li>
-        </ul>
-    </nav>
-    <video class="video-background"  autoplay muted loop id="video-background">
+            <div class="menu-items">
+                <a class="menuitem" href="#sobre-mi">SOBRE MÍ</a>
+                <a class="menuitem" href="#cursos">CURSOS</a>
+                <a class="menuitem" href="#amigos">AMIGOS</a>
+            </div>
+        </div>
+    </div>
+    <video class="video-background" autoplay muted loop id="video-background">
         <source src="src/videoFondo.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de video.
     </video>
@@ -35,10 +39,17 @@
                 <img src="src/img2.jpg" alt="Foto de perfil">
             </div>
             <div class="datos">
-                <h1>Rodrigo Espinoza Concha</h1>
-                <h2>Universidad Católica San Pablo</h2>
+
+                <div class="nombre" style="font-size: 24px;">
+                    <span class="actual_name">Rodrigo Espinoza</span>
+                </div>
+                <div class="universidad" style="font-size: 13px;">
+                    <bdi class="uni_actual">Universidad Católica San Pablo</bdi>
+                </div>
             </div>
         </header>
+
+
 
         <main>
             <section id="sobre-mi">
@@ -66,14 +77,16 @@
                     </article>
                 </a>
 
-                <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=17414" target="_blank">
+                <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=17414"
+                    target="_blank">
                     <article>
                         <h4>Fundamentos Matemáticos para Computación</h4>
                         <p>Dra. Sabrina Suárez Calcina</p>
                     </article>
                 </a>
 
-                <a href="https://www.linkedin.com/in/gabriela-ponce-reinoso-885922127?originalSubdomain=pe" target="_blank">
+                <a href="https://www.linkedin.com/in/gabriela-ponce-reinoso-885922127?originalSubdomain=pe"
+                    target="_blank">
                     <article>
                         <h4>Introducción a la Vida Universitaria</h4>
                         <p>Gabriela Ponce Reinoso</p>
@@ -110,6 +123,7 @@
             </section>
         </main>
     </div>
+
 </body>
 
 </html>
